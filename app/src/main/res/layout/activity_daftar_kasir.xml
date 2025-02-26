@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+
+    <!-- Tab Menu -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#CE2C19"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="52dp"
+            android:layout_height="56dp"
+            android:layout_weight="-1"
+            app:srcCompat="@drawable/admin_dk" />
+
+        <View
+            android:layout_width="225dp"
+            android:layout_height="56dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:text="Zulkifli"
+            android:gravity="end"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="49dp"
+            android:layout_height="34dp"
+            android:layout_weight="-1"
+            android:gravity="end"
+            app:srcCompat="@drawable/login2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/btnKasir"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Kasir"
+            android:backgroundTint="#CE2C19"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnEditMenu"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Edit Menu"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btnTransaksi"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Transaksi"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <!-- RecyclerView untuk daftar kasir -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
+</LinearLayout>
